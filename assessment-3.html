@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessments -3 </title>
+    <link rel="stylesheet" href="assessment-3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment - 3</h1>
+
+        <div class="task">
+            <h2>Calculator</h2>
+            <div id="calculator">
+                <input id="display" readonly>
+                <div id="keys">
+                    <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculate()" class="operator-btn">=</button>
+                    <button onclick="clearDisplay()" class="operator-btn">C</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="task">
+            <h2>Sum of Even Numbers in an Array</h2>
+            <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+            <button onclick="calculateEvenSum()">Calculate Sum</button>
+            <p id="evenSumResult"></p>
+        </div>
+
+        <div class="task">
+            <h2>Person Object Manipulation</h2>
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="number" id="age" placeholder="Age">
+            <button onclick="showPersonDetails()">Show Full Name</button>
+            <button onclick="incrementAge()">Increment Age</button>
+            <p id="personDetails"></p>
+        </div>
+    </div>
+
+    <script src="assessment-3.js"></script>
+</body>
+</html>
